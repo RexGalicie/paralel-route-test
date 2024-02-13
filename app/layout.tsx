@@ -1,10 +1,10 @@
-import './global.css';
+import "./global.css";
 
 export const metadata = {
-  title: 'NextGram',
+  title: "NextGram",
   description:
-    'A sample Next.js app showing dynamic routing with modals as a route.',
-  metadataBase: new URL('https://nextgram.vercel.app'),
+    "A sample Next.js app showing dynamic routing with modals as a route.",
+  metadataBase: new URL("https://nextgram.vercel.app"),
 };
 
 export default function RootLayout(props: {
@@ -13,7 +13,7 @@ export default function RootLayout(props: {
 }) {
   return (
     <html>
-      <body>
+      <body style={{ maxWidth: "1024px" }}>
         {props.children}
         {props.modal}
         <div id="modal-root" />
